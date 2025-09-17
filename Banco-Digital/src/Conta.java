@@ -8,7 +8,6 @@ public class Conta implements MensagemExtrato {
 
     public Conta(Cliente cliente) {
         this.cliente = cliente;
-        this.agencia = agencia;
         this.numero = ++sequencia;
     }
 

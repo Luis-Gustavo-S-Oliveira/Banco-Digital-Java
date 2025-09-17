@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         Cliente cliente1 = new Cliente("Alice");
-        Cliente cliente2 = new Cliente("Bob");
-
-        Conta conta1 = new ContaCorrente(cliente1);
-        Conta conta2 = new ContaPoupança(cliente2);
+      
+        Conta conta1 = new ContaCorrente(new Cliente("Alice"));
+        Conta conta2 = new ContaPoupança(new Cliente("Bob"));
         Conta conta3 = new ContaPoupança(cliente1);
         
 
